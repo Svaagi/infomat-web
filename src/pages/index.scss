@@ -1,0 +1,623 @@
+@import '../styles/colors.scss';
+
+@media (min-width: 768px) {
+    header>div>div[class=image]>img {
+      position: absolute;
+  }
+}
+
+element.style {
+  left: -75rem;
+  top: -10rem;
+}
+
+@media (min-width: 768px) {
+  section[class=columns] {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section[class=columns] {
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+}
+
+div[class=circle] {
+  animation: index-module--move--6f386 10s ease-in-out infinite alternate;
+  background: transparent;
+  border: 9.5rem solid hsla(0,0%,100%,.06);
+  border-radius: 50%;
+  height: 75rem;
+  position: absolute;
+  width: 75rem;
+  z-index: 5!important;
+}
+
+@media (min-width: 768px) {
+  section[class=columns]>div>div {
+      flex: 1 1;
+  }
+}
+
+section[class=columns]>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+header>div>div {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  width: 14.5rem;
+}
+
+header>div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: clip;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  header>div>div[class=text] {
+    height: auto;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+}
+
+
+
+
+
+a[data-type=button], button {
+  all: unset;
+  background: #fff;
+  border-radius: 40px;
+  color: #1c1c1c;
+  font-family: Inter;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 0.75rem 2.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  color: #5358c7;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+a[data-type=button][class=secondary], button[class=secondary] {
+  background: #5358c7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+
+
+
+@media (min-width: 1000px) {
+  section[class=columns] h2 {
+      max-width: 50rem;
+  }
+}
+
+
+section[class=columns] h2 {
+  text-align: center;
+}
+
+a, h1, h2, h3, li, p {
+  font-family: Poppins;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+section[class=quote] img[class=hideOnMobile] {
+  display: none;
+  height: 100%;
+  width: 50%;
+}
+
+section[class=rows]>div[class=image]>img {
+  left: 5rem;
+  position: absolute;
+  width: 100%;
+}
+
+
+section[class=rows]>div[class=image] {
+  display: none;
+  position: relative;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  section[class=rows]>div:not([class=image],[class=circle])>div>div {
+    display: flex;
+    gap: 1rem;
+}
+}
+
+section[class=rows]>div:not([class=image],[class=circle]) img[class=icon] {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  section[class=rows]>div:not([class=image],[class=circle])>div {
+    align-items: flex-start;
+}
+}
+
+section[class=rows]>div:not([class=image],[class=circle])>div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  section[class=rows] h2 {
+    text-align: left;
+}
+}
+
+
+section[class=rows] h2 {
+  margin-bottom: 3rem;
+}
+
+
+header>div>div p {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+a, li, p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1000px) {
+  a, li, p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+}
+
+.circle {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  animation: index-module--move--6f386 10s ease-in-out infinite alternate;
+  background: transparent;
+  border: 9.5rem solid hsla(0,0%,100%,.06);
+  border-radius: 50%;
+  height: 75rem;
+  position: absolute;
+  width: 75rem;
+  z-index: 5!important;
+  display: block;
+  right: -75rem;
+  top: -5rem;
+}
+
+header>div>div[class=image]>img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section[class=rows]>div[class=image] {
+    display: block;
+}
+}
+
+
+@media (min-width: 768px) {
+  section[class=rows] {
+    display: flex;
+    padding: 7.5rem calc(50vw - 40rem);
+    text-align: left;
+  }
+}
+
+section[class=rows] {
+  background: #5358c7;
+  color: #fff;
+  overflow-x: clip;
+  padding: 4rem;
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section[class=rows]>div:not([class=image],[class=circle]) {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  section[class=rows]>div:not([class=image],[class=circle]) img {
+    display: none;
+  }
+}
+
+section[class=rows] * {
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  section[class=rows]>div:not([class=image],[class=circle]) img[class=icon] {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section[class=columns]>div {
+    flex-direction: row;
+    gap: 5rem;
+    max-width: 80rem;
+    padding: 0;
+}
+}
+
+
+
+
+section[class=columns]>div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+}
+
+
+section[class=columns]>div>div>img {
+  align-self: center;
+  width: 15rem;
+}
+
+section[class=quote] img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+footer div[class=images] img {
+  width: 100%;
+}
+
+section[class=rows]>div:not([class=image],[class=circle]) img {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  section[class=quote] img[class=hideOnMobile] {
+    display: block;
+}
+}
+
+@media (min-width: 768px) {
+  section[class=quote] img {
+    display: none;
+}
+
+}
+
+section[class=quote] {
+  background: #5358c7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+@media (min-width: 768px) {
+  header>div>div {
+      align-items: flex-start;
+      min-height: 25rem;
+      text-align: left;
+      width: 50%;
+  }
+}
+
+h1 {
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  margin: .5rem 0;
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  z-index: 10;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+      font-size: 4rem;
+  }
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+@media (min-width: 1000px) {
+
+  h2 {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@media (min-width: 1000px) {
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+}
+
+header {
+  background-color: #5358c7;
+  color: #fff;
+  margin-bottom: 10rem;
+  overflow-x: clip;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  header>div {
+      flex-direction: row;
+      gap: 2rem;
+      padding: 0 calc(50vw - 40rem);
+  }
+}
+
+@media (min-width: 768px) {
+  section[class=columns]>div {
+    flex-direction: row;
+    gap: 5rem;
+    max-width: 80rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  section[class=rows] {
+    display: flex;
+    padding: 7.5rem calc(50vw - 40rem);
+    text-align: left;
+}
+
+}
+
+section[class=text] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2.5rem;
+  text-align: center;
+}
+
+section[class=text] a {
+  margin-top: 2rem;
+}
+
+
+
+@media (min-width: 1000px) {
+  header>div>div p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+}
+
+@media (min-width: 768px) {
+  section[class=quote] {
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 7.5rem calc(50vw - 40rem);
+}
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  section[class=text] {
+    align-items: flex-start;
+    max-width: 70rem;
+    padding: 7.5rem calc(50vw - 40rem);
+    text-align: left;
+}
+}
+
+footer>ul li a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+section[class=quote] p[class=name] {
+  font-weight: 500;
+}
+
+header>div:after {
+  background: #5358c7;
+  border-radius: 50%;
+  bottom: -4rem;
+  content: "";
+  height: 13rem;
+  position: absolute;
+  width: 120%;
+  z-index: -10;
+}
+
+header>div>div[class=image] {
+  margin: 0;
+  width: 17rem;
+}
+
+@media (min-width: 768px) {
+  header>div>div[class=image] {
+    align-self: stretch;
+    height: auto;
+    margin: 0;
+    position: relative;
+    width: 50%;
+  }
+}
+
+
+header nav {
+  align-items: center;
+  display: flex;
+  height: 5.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  header nav {
+      justify-content: flex-start;
+      margin: 0 auto;
+      max-width: 80rem;
+      padding: 0 4rem;
+  }
+}
+
+header>div * {
+  z-index: 10;
+}
+
+header {
+  display: block;
+}
+
+:root {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer {
+  background: #4b4fb3;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+
+
+
+@media (min-width: 768px) {
+  footer>div[class=logo] {
+    width: 50%;
+}
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+
+
+footer>ul {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7.5rem calc(50vw - 40rem);
+}
+}
+
+
+
+@media (min-width: 768px) {
+  footer>ul {
+    margin: 0;
+}
+}
+
+footer div[class=images] img {
+  width: 100%;
+}
+
+
+footer div[class=images] {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 17rem;
+}
+
+@media (min-width: 768px) {
+  footer div[class=images] {
+    align-items: flex-start;
+    flex-direction: column;
+}
+}
+
+footer div[class=images] a:nth-child(2) {
+  width: calc(65% - 0.5rem);
+}
+
+footer div[class=images] a:nth-child(3) {
+  width: calc(35% - 0.5rem);
+}
+
+footer div[class=images] a {
+  max-width: 15rem;
+  width: 100%;
+}
+
+
+
