@@ -90,7 +90,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <section className="text">
           <h2>Ako sa zapojiť?</h2>
           <p>Obsah týždenných výziev a&nbsp;diskusií je navrhnutý tak, aby sa dal jednoducho implementovať do&nbsp;osnov predmetov ako sú Slovenský jazyk, Dejepis, Etika alebo Občianska náuka. Počas tvorby otázok sme dbali na&nbsp;to, aby sme sa držali v&nbsp;medziach štátneho vzdelávacieho programu. Ak si ako stredná škola prajete Infomat implementovať do&nbsp;výučbového procesu, kontaktujte nás.</p>
-          <a data-type="button" className="secondary" href="mailto:08majka80@gmail.com">Kontaktujte nás</a>
+          <a data-type="button" className="secondary" href="mailto:support@info-mat.sk">Kontaktujte nás</a>
         </section>
         
         <section className="quote">
@@ -117,7 +117,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>Administrátorské rozhranie</li>
             <li><a href="https://dev.infomat.sk">Testovacie rozhranie</a></li>
             <li>Registrácia školy</li>
-            <li><a href="mailto:08majka80@gmail.com">Kontakt</a></li>
+            <li><a href="mailto:support@info-mat.sk">Kontakt</a></li>
           </ul>
           <div>
             <p>S podporou</p>
