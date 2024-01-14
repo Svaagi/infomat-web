@@ -115,7 +115,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>Žiacke rozhranie</li>
             <li>Učiteľské rozhranie</li>
             <li>Administrátorské rozhranie</li>
-            <li><a href="https://dev.infomat.sk">Testovacie rozhranie</a></li>
+            <li><a href="https://infomat-39565.web.app/">Testovacie rozhranie</a></li>
             <li>Registrácia školy</li>
             <li><a href="mailto:support@info-mat.sk">Kontakt</a></li>
           </ul>
