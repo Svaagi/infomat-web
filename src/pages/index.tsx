@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="text">
               <h1>Infomat</h1>
               <p>Rozvíjame kritické myslenie a&nbsp;mediálnu gramotnosť v&nbsp;stredoškolskom prostredí.</p>
-              <a data-type="button" href="https://app.infomat.sk">Prejsť do&nbsp;aplikácie</a>
+              <a data-type="button" href="https://infomat-39565.web.app/">Prejsť do&nbsp;aplikácie</a>
             </div>
             <div className="image">
               <img src={images.sample} alt="App sample" />
@@ -40,7 +40,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div>
               <img src={images.communication} alt="" />
               <h3>Komunikačné zručnosti</h3>
-              <p>Kritické myslenie zahŕňa efektívne formulovanie myšlienok, nápadov a&nbsp;argumentov. Okrem týždenných výziev majú žiaci zapojiť sa do&nbsp;triedneho diskusného fóra, kde si môžu natrénovať argumentácie. Táto aktivita môže zlepšiť ich komunikačné schopnosti, vrátane schopnosti <strong>jasne vyjadrovať myšlienky, aktívne počúvať a&nbsp;vytvárať presvedčivé argumenty.</strong></p>
+              <p>Kritické myslenie zahŕňa efektívne formulovanie myšlienok, nápadov a&nbsp;argumentov. Okrem týždenných výziev majú žiaci možnosť zapojiť sa do&nbsp;triedneho diskusného fóra, kde si môžu natrénovať argumentácie. Táto aktivita môže zlepšiť ich komunikačné schopnosti, vrátane schopnosti <strong>jasne vyjadrovať myšlienky, aktívne počúvať a&nbsp;vytvárať presvedčivé argumenty.</strong></p>
             </div>
             <div>
               <img src={images.decisionMaking} alt="" />
@@ -94,10 +94,10 @@ const IndexPage: React.FC<PageProps> = () => {
         </section>
         
         <section className="quote">
-          <img className="hideOnMobile" src={images.mariannaSzarkova} alt="Marianna Szarková" />
+          <img className="hideOnMobile" src={images.pishkotky} alt="Tím Pishkotky" />
           <div>
             <h2>Prečo sa zapojiť?</h2>
-            <img src={images.mariannaSzarkova} alt="Marianna Szarková" />
+            <img src={images.pishkotky} alt="Tím Pishkotky" />
             <div>
               <p>„Z&nbsp;dlhodobého hľadiska patrí Slovensko pod&nbsp;priemer v&nbsp;krajinách OECD v&nbsp;prieskumoch PISA. Aj z&nbsp;tohto dôvodu sme vyvinuli Infomat - aplikáciu, ktorá interaktívnou a&nbsp;zábavnou formou sprevádza stredoškolských študentov pri&nbsp;rozvoji kritického myslenia a&nbsp;mediálnej gramotnosti. Výučba kritického myslenia sa teda vďaka našej aplikácii nemusí vykonávať prostredníctvom nových učebníc, ale jednoducho cez týždenné výzvy zamerané na&nbsp;jednotlivé aspekty mediálnej gramotnosti, ktoré boli pripravené v&nbsp;spolupráci so Slovenskou debatnou asociáciou.“</p>
               <p className="name">- Marianna Szarková</p>
@@ -117,6 +117,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <li>Administrátorské rozhranie</li>
             <li><a href="https://infomat-39565.web.app/">Testovacie rozhranie</a></li>
             <li>Registrácia školy</li>
+            <li><a href="">Ochrana osobných údajov</a></li>
             <li><a href="mailto:support@info-mat.sk">Kontakt</a></li>
           </ul>
           <div>
@@ -124,6 +125,8 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="images">
               <OutboundLink href="https://www.mirri.gov.sk/" target="_blank"><img src={images.logoMirri} alt="Logo MIRRI" /></OutboundLink>
               <OutboundLink href="https://www.planobnovy.sk/" target="_blank"><img src={images.logoPOO} alt="Logo Plán obnovy" /></OutboundLink>
+              <OutboundLink href="https://next-generation-eu.europa.eu/index_sk" target="_blank"><img src={images.europeanUnion} alt="Logo EU" /></OutboundLink>
+              <OutboundLink href="https://www.hacknime.to/" target="_blank"><img src={images.hacknimeTo} alt="Logo Hacknime.to" /></OutboundLink>
               <OutboundLink href="https://www.sda.sk/" target="_blank"><img src={images.logoSDA} alt="Logo SDA" /></OutboundLink>
             </div>
           </div>

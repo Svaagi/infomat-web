@@ -11,11 +11,13 @@ import forumIcon from "./forum-icon.png"
 import challengesIcon from "./challenges-icon.png"
 import educationIcon from "./education-icon.png"
 import howItWorks from "./how-it-works.svg"
-import mariannaSzarkova from "./marianna-szarkova.jpg"
+import pishkotky from "./pishkotky.jpg"
 import support from "./support.png"
 import logoMirri from "./logo-mirri.svg"
 import logoPOO from "./logo-poo.png"
 import logoSDA from "./logo-sda.png"
+import europeanUnion from "./european-union.png"
+import hacknimeTo from "./hacknime-to.png"
 
 export default {
   favicon,
@@ -31,9 +33,11 @@ export default {
   challengesIcon,
   educationIcon,
   howItWorks,
-  mariannaSzarkova,
+  pishkotky,
   support,
   logoMirri,
   logoPOO,
-  logoSDA
+  logoSDA,
+  europeanUnion,
+  hacknimeTo,
 }
