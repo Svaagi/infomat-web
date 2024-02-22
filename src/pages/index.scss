@@ -119,6 +119,7 @@ section[class=columns] h2 {
   text-align: center;
 }
 
+
 a, h1, h2, h3, li, p {
   font-family: Poppins;
   margin: 0.5rem 0;
@@ -129,6 +130,12 @@ section[class=quote] img[class=hideOnMobile] {
   display: none;
   height: 100%;
   width: 50%;
+}
+
+section[class=hacknime-to] img[class=hideOnMobile] {
+  display: none;
+  height: 100%;
+  width: 30%;
 }
 
 section[class=rows]>div[class=image]>img {
@@ -299,6 +306,10 @@ section[class=quote] img {
   width: 100%;
 }
 
+section[class=hacknime-to] img {
+  width: 100%;
+}
+
 footer div[class=images] img {
   width: 100%;
 }
@@ -320,12 +331,38 @@ section[class=rows]>div:not([class=image],[class=circle]) img {
 
 }
 
+@media (min-width: 768px) {
+  section[class=hacknime-to] img[class=hideOnMobile] {
+    display: block;
+}
+}
+
+@media (min-width: 768px) {
+  section[class=hacknime-to] img {
+    display: none;
+}
+
+}
+
 section[class=quote] {
   background: #5358c7;
   color: #fff;
   display: flex;
   flex-direction: column;
   padding: 4rem 2rem;
+}
+
+section[class=hacknime-to] {
+  background: #5358c7;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+section[class=hacknime-to] a {
+  color: #fff;
+  font-weight: 700;
+  font-size: large;
 }
 
 body {
@@ -451,12 +488,19 @@ section[class=text] a {
     flex-direction: row;
     gap: 5rem;
     padding: 7.5rem calc(50vw - 40rem);
+    padding-bottom: 0rem;
 }
 }
 
-
-
-
+@media (min-width: 768px) {
+  section[class=hacknime-to] {
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 7.5rem calc(50vw - 40rem);
+    padding-top: 0rem;
+}
+}
 
 @media (min-width: 768px) {
   section[class=text] {
@@ -615,11 +659,9 @@ footer div[class=images] a:nth-child(3) {
   width: calc(80% - 0.5rem);
 }
 
-footer div[class=images] a:nth-child(4) {
-  width: calc(80% - 0.5rem);
-}
 
-footer div[class=images] a:nth-child(5) {
+
+footer div[class=images] a:nth-child(4) {
   width: calc(35% - 0.5rem);
 }
 

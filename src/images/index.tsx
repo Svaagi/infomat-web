@@ -18,6 +18,7 @@ import logoPOO from "./logo-poo.png"
 import logoSDA from "./logo-sda.png"
 import europeanUnion from "./european-union.png"
 import hacknimeTo from "./hacknime-to.png"
+import hacknimeToBlue from "./hacknime-to-blue.png"
 
 export default {
   favicon,
@@ -40,4 +41,5 @@ export default {
   logoSDA,
   europeanUnion,
   hacknimeTo,
+  hacknimeToBlue,
 }
