@@ -7,14 +7,6 @@ import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const year = new Date().getFullYear();
 
-// State for modal visibility
-
-
-// Include the modal in the return of the IndexPage component
-// ...
-// ...
-
-
 const IndexPage: React.FC<PageProps> = () => {
   const [showConsentBanner, setShowConsentBanner] = useState(false);
   const [consent, setConsent] = useState({
@@ -137,18 +129,18 @@ const IndexPage: React.FC<PageProps> = () => {
     />
   )}
       {showConsentBanner && (
-        <div style={{ backgroundColor: '#5358c7', padding: '10px', color: 'white' }}>
-          <p style={{fontWeight: 'bold'}}>Cookies na stránke Info-mat.sk</p>
-          <p>Používame základné cookies súbory aby mohla táto stránka fungovať.</p>
-          <p>Taktiež používame analytické súbory, akceptovaním súhlasíte s ich používaním.</p>
-          <button onClick={handleAcceptAnalytics} style={{ backgroundColor: '#369C8B', marginRight: '5px', color: 'white' }}>
-            Prijať analytické cookies
+        <div style={{ backgroundColor: 'white', padding: '10px' }}>
+          <p style={{fontWeight: 'bold'}}>Súbory cookies na stránke www.info-mat.sk</p>
+          <p>Aby táto služba fungovala, používame niektoré nevyhnutné súbory cookies.</p>
+          <p>Chceli by sme nastaviť ďalšie súbory cookies, aby sme si mohli zapamätať vaše nastavenia, porozumieť tomu, ako ľudia používajú službu, a vykonať vylepšenia.</p>
+          <button onClick={handleAcceptAnalytics} style={{ backgroundColor: '#5358c7', marginRight: '5px',  marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer'}}>
+            Prijať všetky cookies
           </button>
-          <button onClick={handleRejectAnalytics} style={{ backgroundColor: '#D04355', margin: '0 5px', color: 'white' }}>
-            Odmietnuť analytické cookies
+          <button onClick={handleRejectAnalytics} style={{ backgroundColor: '#5358c7', margin: '0 5px', marginTop: '5px' ,marginBottom: '5px', color: 'white', cursor: 'pointer'}}>
+            Iba nevyhnutné
           </button>
-          <button onClick={handleOpenSettings} style={{ backgroundColor: 'white', marginLeft: '5px' }}>
-            Nastavenia cookies
+          <button onClick={handleOpenSettings} style={{ backgroundColor: '#5358c7', marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer' }}>
+            Nastavenia
           </button>
         </div>
       )}
