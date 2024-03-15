@@ -129,21 +129,33 @@ const IndexPage: React.FC<PageProps> = () => {
     />
   )}
       {showConsentBanner && (
-        <div style={{ backgroundColor: 'white', padding: '10px' }}>
-          <p style={{fontWeight: 'bold'}}>Súbory cookies na stránke www.info-mat.sk</p>
-          <p>Aby táto služba fungovala, používame niektoré nevyhnutné súbory cookies.</p>
-          <p>Chceli by sme nastaviť ďalšie súbory cookies, aby sme si mohli zapamätať vaše nastavenia, porozumieť tomu, ako ľudia používajú službu, a vykonať vylepšenia.</p>
-          <button onClick={handleAcceptAnalytics} style={{ backgroundColor: '#5358c7', marginRight: '5px',  marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer'}}>
-            Prijať všetky cookies
-          </button>
-          <button onClick={handleRejectAnalytics} style={{ backgroundColor: '#5358c7', margin: '0 5px', marginTop: '5px' ,marginBottom: '5px', color: 'white', cursor: 'pointer'}}>
-            Iba nevyhnutné
-          </button>
-          <button onClick={handleOpenSettings} style={{ backgroundColor: '#5358c7', marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer' }}>
-            Nastavenia
-          </button>
-        </div>
-      )}
+  <div style={{
+    position: 'fixed', // Position fixed to stay at the top
+    top: 0, // Start from the very top
+    left: 0, // Align to the left edge
+    width: '100%', // Span the full width of the viewport
+    backgroundColor: 'white',
+    padding: '10px',
+    boxSizing: 'border-box', // Ensure padding is included in the width calculation
+    zIndex: 1000, // Make sure it's above other content
+  }}>
+    <p style={{ fontWeight: 'bold' }}>Súbory cookies na stránke www.info-mat.sk</p>
+    <p>Aby táto služba fungovala, používame niektoré nevyhnutné súbory cookies.</p>
+    <p>Chceli by sme nastaviť ďalšie súbory cookies, aby sme si mohli zapamätať vaše nastavenia, porozumieť tomu, ako ľudia používajú službu, a vykonať vylepšenia.</p>
+    <div > 
+      <button onClick={handleAcceptAnalytics} style={{ backgroundColor: '#5358c7', marginRight: '5px', marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer' }}>
+        Prijať všetky cookies
+      </button>
+      <button onClick={handleRejectAnalytics} style={{ backgroundColor: '#5358c7', margin: '0 5px', marginTop: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer' }}>
+        Iba nevyhnutné
+      </button>
+      <button onClick={handleOpenSettings} style={{ backgroundColor: '#5358c7', marginLeft: '5px', marginBottom: '5px', color: 'white', cursor: 'pointer' }}>
+        Nastavenia
+      </button>
+    </div>
+  </div>
+)}
+
       <main>
         <header>
           <nav><img src={images.logo} alt="Infomat logo" /></nav>
