@@ -94,14 +94,14 @@ const IndexPage: React.FC<PageProps> = () => {
 
   const handleAcceptAnalytics = () => {
     setConsent({ ...consent, analytics: true });
-    localStorage.setItem('userConsent', JSON.stringify({ ...consent, analytics: true }));
+    localStorage.setItem('consent', JSON.stringify({ ...consent, analytics: true }));
     setShowConsentBanner(false);
     // Hide the popup
   };
 
   const handleRejectAnalytics = () => {
     setConsent({ ...consent, analytics: false });
-    localStorage.setItem('userConsent', JSON.stringify({ ...consent, analytics: false }));
+    localStorage.setItem('consent', JSON.stringify({ ...consent, analytics: false }));
     setShowConsentBanner(false);
     // Hide the popup
   };
