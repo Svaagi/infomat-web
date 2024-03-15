@@ -113,6 +113,7 @@ const IndexPage: React.FC<PageProps> = () => {
     const updatedPreferences = { ...consent, analytics: !consent.analytics };
     setConsent(updatedPreferences);
     localStorage.setItem("consent", JSON.stringify(updatedPreferences));
+    setShowConsentBanner(false);
     setShowSettingsModal(true);
   };
 
@@ -122,7 +123,10 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       {showSettingsModal && (
     <SettingsModal
-      onClose={() => setShowSettingsModal(false)}
+      onClose={() => {
+        setShowSettingsModal(false)
+        setShowConsentBanner(true)
+      }}
       onSave={handleSaveSettings}
       consent={consent}
       setConsent={setConsent}
